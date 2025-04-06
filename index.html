@@ -168,18 +168,19 @@
             border-radius: 12px;
             overflow: hidden;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-        }
-
-        .team-photo {
-            width: 100%;
-            height: auto;
-            display: block;
+            height: 500px;
+            background-image: url('teamPhoto.jpg');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: var(--light-bg);
         }
 
         @media (max-width: 768px) {
             .team-photo-container {
                 max-width: 100%;
                 margin: 1rem auto;
+                height: 300px;
             }
         }
     </style>
@@ -226,7 +227,6 @@
         <section class="team-section">
             <h2>Our Team</h2>
             <div class="team-photo-container">
-                <img src="./teamPhoto.png" alt="CyberByte Team" class="team-photo">
             </div>
         </section>
     </div>
