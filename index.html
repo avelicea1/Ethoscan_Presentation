@@ -168,17 +168,11 @@
             border-radius: 12px;
             overflow: hidden;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
 
         .team-photo {
-            max-width: 100%;
-            max-height: 600px;
-            width: auto;
+            width: 100%;
             height: auto;
-            object-fit: contain;
             display: block;
         }
 
@@ -187,17 +181,13 @@
                 max-width: 100%;
                 margin: 1rem auto;
             }
-            
-            .team-photo {
-                max-height: 400px;
-            }
         }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <img src="icon.jpg" alt="CyberByte Logo" class="logo">
+            <img src="./icon.jpg" alt="CyberByte Logo" class="logo">
             <h1>CyberByte</h1>
             <p class="tagline">Advanced Deepfake & Phishing Detection for a Safer Web</p>
         </div>
@@ -233,9 +223,11 @@
             </video>
         </section>
         
-        
-            
-                <img src="teamPhoto.jpg" alt="CyberByte Team">
+        <section class="team-section">
+            <h2>Our Team</h2>
+            <div class="team-photo-container">
+                <img src="./teamPhoto.jpg" alt="CyberByte Team" class="team-photo">
+            </div>
         </section>
     </div>
     
