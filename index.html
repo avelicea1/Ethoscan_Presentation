@@ -156,6 +156,32 @@
                 font-size: 1.5rem;
             }
         }
+
+        .team-section {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .team-photo-container {
+            max-width: 800px;
+            margin: 2rem auto;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-photo {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .team-photo-container {
+                max-width: 100%;
+                margin: 1rem auto;
+            }
+        }
     </style>
 </head>
 <body>
@@ -190,38 +216,17 @@
         
         <section class="section">
             <h2>Demo Video</h2>
-            <p>Watch our demo to see CyberByte in action, detecting deepfake videos and phishing attempts in real-time:</p>
+            <p>Watch our demo to see Ethoscan in action, detecting deepfake videos and phishing attempts in real-time:</p>
             <video class="demo-video" controls>
                 <source src="demo.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </section>
         
-        <section class="section">
+        <section class="team-section">
             <h2>Our Team</h2>
-            <p>CyberByte was developed by a dedicated team of cybersecurity and AI experts:</p>
-            
-            <div class="team-grid">
-                <div class="team-member">
-                    <img src="team/member1.jpg" alt="Team Member 1">
-                    <h3>John Doe</h3>
-                    <p>Team Lead & AI Specialist</p>
-                </div>
-                <div class="team-member">
-                    <img src="team/member2.jpg" alt="Team Member 2">
-                    <h3>Jane Smith</h3>
-                    <p>Frontend Developer</p>
-                </div>
-                <div class="team-member">
-                    <img src="team/member3.jpg" alt="Team Member 3">
-                    <h3>Mike Johnson</h3>
-                    <p>Backend Developer</p>
-                </div>
-                <div class="team-member">
-                    <img src="team/member4.jpg" alt="Team Member 4">
-                    <h3>Sarah Williams</h3>
-                    <p>UI/UX Designer</p>
-                </div>
+            <div class="team-photo-container">
+                <img src="team/team-photo.jpg" alt="CyberByte Team" class="team-photo">
             </div>
         </section>
     </div>
